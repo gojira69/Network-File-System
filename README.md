@@ -1,3 +1,9 @@
+# Network File System
+
+## Introduction
+This project implements a Network File System (NFS) consisting of a Naming `Server` (NS), `Storage Servers` (SS), and `Clients`. The system allows multiple clients to access and perform operations on files and directories stored across distributed storage servers. The NS maintains the metadata and routing information, while SS stores and manages the actual data.
+
+
 ## Usage
 1. To build Naming Server 
 ```
@@ -76,7 +82,7 @@
 
 5. `FILEINFO`: returns the information related to the file requested (no directories) by the client like permission, last modified time, path, etc. The information about the file is stored in the `struct fileDetails` and is sent by the storage server to the client.
 
-## Error Handling
+## Error Codes
 
 Custom error codes have been defined for almost all possible errors in the `errors.c` file.
 |Error Code|Type Of Error|
